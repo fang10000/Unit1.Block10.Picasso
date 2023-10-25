@@ -1,65 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abstract Gallery</title>
     <link href="external.css" rel="stylesheet" type="text/css">
     <style>
-        form, p, h2 {font-family: 'Courier New', Courier, monospace;}
+        form,
+        p,
+        h2 {
+            font-family: 'Courier New', Courier, monospace;
+        }
     </style>
 </head>
+
 <body>
     <h1 style="font-family:monospace;">PARK SOUTH GALLERY</h1>
     <hr>
- <div class="container">   
-    <div class="background">
+    <div class="container">
+        <div class="background">
             <!-- Background layer containing top 3 and bottom 1 pictures-->
-        <div class="box1">
-           <img src="img/upleft.png">
-            <!-- box1 -->
-        </div>
-        <div class="box2">
-            <!-- <img src="img/upmiddle.png"> -->
-            box2
-        </div>
-        <div class="box3">
-            <!-- <img src="img/upright.png"> -->
-            box3
-        </div>
-        <div class="box4">
-            <!-- <img style="margin-top:0px; width: 100%;);" src="img/bottom.png"> -->
-            box4
-        </div>
+            <div class="box1">
+                <img src="img/upleft.png">
+            </div>
+            <div class="box2">
+                <img src="img/upmiddle.png">
+            </div>
+            <div class="box3">
+                <img src="img/upright.png">
+            </div>
+            <div class="box4">
+                    <img src="img/bottom.png">
+                <hr>
+                <p>Image by <a
+                        href="https://www.freepik.com/free-vector/hand-drawn-picasso-style-illustration_30576509.htm#query=picasso&position=32&from_view=search&track=sph">Freepik</a>
+                </p>
+            </div>
+            <div class="triangle">
+                        <img style="border:0px;" src="img/triangle.png">
+                    </div>
+                <div class="box5">
+                <!-- Contact form-->
+                <form style="line-height: 200%;" name="contactForm" action="formsubmitted.html">
+                    <label style="font-weight: bolder;">
+                        Contact Form
+                    </label><br>
+                    <label>
+                        First Name <br>
+                        <input type="text" id="First Name" placeholder="First Name">
+                    </label>
+                    <br>
+                    <label>
+                        Last Name <br>
+                        <input type="text" id="Last Name" placeholder="Last Name">
+                    </label>
+                    <br>
+                    <label>
+                        Email <br>
+                        <input type="text" id="Email" placeholder="Email Address">
+                    </label>
+                    <br>
+                    <input type="Submit" id="Submit">
+                </form>
+            </div>
             <!-- The two floating objects on top of the background-->
-        <div class="logo">
-            <!-- <img src="img/circle-logo.png"> -->
+            <div class="logo">
+                <img style="border:0px;" src="img/circle-logo.png">
+            </div>
         </div>
-        <div class="triangle">
-            <!-- <img src="img/triangle.png"> -->
-        </div>
-    </div>
-</div>
-    <div class="container2">
-        <p>Image by <a
-                href="https://www.freepik.com/free-vector/hand-drawn-picasso-style-illustration_30576509.htm#query=picasso&position=32&from_view=search&track=sph">Freepik</a>
-        </p>
-        <h2>Contact Form</Form></h2>
-        <form name="contactForm" action="formsubmitted.html">
-            <label>
-                First Name
-                <input type="text" id="First Name" placeholder="First Name">
-            </label>
-            <label>
-                Last Name
-                <input type="text" id="Last Name" placeholder="Last Name">
-            </label>
-            <label>
-                Email
-                <input type="text" id="Email" placeholder="Email Address">
-            </label>
-            <input type="Submit" id="Submit">
-        </form>
     </div>
 </body>
 </html>
